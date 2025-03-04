@@ -51,9 +51,10 @@
 
 
 ## Estimating the number of clusters
-| Year | Authors                                                 | Title                                                                 | Venue                                    | Publication Link                                  | Code Link                                             |
-|------|---------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------|---------------------------------------------------|-------------------------------------------------------|
-| 2001 | Tibshirani, Robert, Guenther Walther, and Trevor Hastie | Estimating the number of clusters in a data set via the gap statistic | Journal of the royal statistical society | [Link](https://tibshirani.su.domains/ftp/gap.pdf) | [Code](https://github.com/milesgranger/gap_statistic) |
+| Year | Authors                                                 | Title                                                                 | Venue                                    | Method | Publication Link                                                                                                                 | Code Link                                             |
+|------|---------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| 1953 | Thorndike, Robert L.                                    | Who belongs in the family?                                            | Psychometrika                            | Elbow  | [Link](https://www.cambridge.org/core/journals/psychometrika/article/who-belongs-in-the-family/5270D9B37A258A06C7CE7C0A528145F5) |                                                       |
+| 2001 | Tibshirani, Robert, Guenther Walther, and Trevor Hastie | Estimating the number of clusters in a data set via the gap statistic | Journal of the royal statistical society | GAP    | [Link](https://tibshirani.su.domains/ftp/gap.pdf)                                                                                | [Code](https://github.com/milesgranger/gap_statistic) |
 
 
 ## Frameworks and code
