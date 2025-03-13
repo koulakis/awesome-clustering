@@ -66,8 +66,6 @@
 | scikit-learn | python   | k-means, k-means++, dbscan, hdbscan, spectral and more | [Docs](https://scikit-learn.org/stable/api/sklearn.cluster.html) | [Code](https://github.com/scikit-learn/scikit-learn) |
 
 ## Metrics
-Here is your table sorted by year while maintaining all content:
-
 | Year | Authors | Title | Venue | Name | Optimality | Requires Ground Truth | 
 | --- | --- | --- | --- | --- | --- | --- |
 | 1971 | Rand                 | Objective Criteria for the evaluation of Clustering methods  [\[Paper\]](https://doi.org/10.2307%2F2284239) [\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.rand_score.html#sklearn.metrics.rand_score)    | Journal of the American Statistical Association | Rand Index (RI)               | ↑          | ✅ |
