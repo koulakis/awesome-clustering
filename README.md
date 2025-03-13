@@ -64,19 +64,28 @@
 | scikit-learn | python   | k-means, k-means++, dbscan, hdbscan, spectral and more | [Docs](https://scikit-learn.org/stable/api/sklearn.cluster.html) | [Code](https://github.com/scikit-learn/scikit-learn) |
 
 ## Metrics
+Here is your table sorted by year while maintaining all content:
+
 | Year | Authors | Title | Venue | Name | Optimality | Requires Ground Truth | 
 | --- | --- | --- | --- | --- | --- | --- |
 | 1971 | Rand                 | Objective Criteria for the evaluation of Clustering methods  [\[Paper\]](https://doi.org/10.2307%2F2284239) [\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.rand_score.html#sklearn.metrics.rand_score)    | Journal of the American Statistical Association | Rand Index (RI)               | ↑          | ✅ |
 | 1973 | Dunn                 | Well-Separated Clusters and Optimal Fuzzy Partitions [\[Paper\]](https://doi.org/10.1080%2F01969727408546059) [\[Code\]](https://lightning.ai/docs/torchmetrics/stable/clustering/dunn_index.html)| Journal Paper | Dunn Index                    | ↑          | ❌ |
 | 1974 | Calinski & Harabasz  | A Dendrite Method for Cluster Analysis [\[Paper\]](https://www.tandfonline.com/doi/abs/10.1080/03610927408827101)[\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.calinski_harabasz_score.html) | Biometrics    | Calinski-Harabasz Index       | ↑          | ❌ |
 | 1979 | Davies and Bouldin                | A Cluster Separation Measure            [\[Paper\]](https://ieeexplore.ieee.org/document/4766909)[\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.davies_bouldin_score.html#sklearn.metrics.davies_bouldin_score)   | -          | Davies-Bouldin score | ↓          | ❌ |
+| 1983 | Fowlkes and Mallows | A method for comparing two hierarchical clusterings [\[Paper\]](https://www.tandfonline.com/doi/abs/10.1080/01621459.1983.10478008) [\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fowlkes_mallows_score.html) | Journal of the American Statistical Association | Fowlkes-Mallows Index (FMI) | ↑ | ✅ |
 | 1985 | Hubert & Arabie      |       Comparing Partitions    [\[Paper\]](https://link.springer.com/article/10.1007%2FBF01908075)[\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_rand_score.html)    | Journal of Classification | Adjusted Rand Index (ARI)           | ↑          | ✅ |
 | 1987 | Rousseeuw                | Silhouettes: A graphical aid to the interpretation and validation of cluster analysis            [\[Paper\]](https://www.sciencedirect.com/science/article/pii/0377042787901257)[\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score)   | Journal of Computational and Applied Mathematics          | Silhouette Coefficient | ↓          | ❌ |
+| 1991 | Xie and Beni | A validity measure for fuzzy clustering [\[Paper\]](https://ieeexplore.ieee.org/document/85677) [\[Code\]](https://search.r-project.org/CRAN/refmans/fclust/html/XB.html) | IEEE Transactions on Pattern Analysis and Machine Intelligence | Xie and Beni Index | ↓ | ❌ |
 | 2000 | van Dongen                 | Performance criteria for graph clustering and Markov cluster experiments. [\[Paper\]](https://ir.cwi.nl/pub/4461)[\[Code\]](https://igraph.org/r/html/1.2.5/split_join_distance.html)   | Technical Report INS-R0012          | Split-join distance | ↓          | ✅ |
 | 2003 | Meila                | Comparing Clusterings by the Variation of Information [\[Paper\]](https://link.springer.com/chapter/10.1007/978-3-540-45167-9_14)[\[Code\]](https://clusteringjl.readthedocs.io/en/latest/varinfo.html)   | Learning Theory and Kernel Machine          | Variation of Information (VI) | ↓          | ✅ |
 | 2007 |  Rosenberg and  Hirschberg            | V-Measure: A conditional entropy-based external cluster evaluation measure      [\[Paper\]](https://aclweb.org/anthology/D/D07/D07-1043.pdf)[\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.v_measure_score.html) | Computational Statistics Handbook| V-Measure     |  ↑ |         ✅ |
-| - | - | - [\[Paper\]]()[\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html)   |           |  Normalized Mutual Information (NMI) |  ↑ | ✅ |
-| - | -                |  -            [\[Paper\]](-) [\[Code\]](https://stackoverflow.com/questions/34047540/python-clustering-purity-metric)   | -          | Purity | ↑          | ✅ |
+| 2010 | Vinh, Epps, and Bailey | [\[Paper\]](http://jmlr.csail.mit.edu/papers/volume11/vinh10a/vinh10a.pdf) [\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_mutual_info_score.html) | JMLR | Adjusted Mutual Information (AMI) | ↓ | ✅ |
+| - | - |[\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html)   |     -      |  Normalized Mutual Information (NMI) |  ↑ | ✅ |
+| - | -                |  [\[Code\]](https://permetrics.readthedocs.io/en/latest/pages/clustering/PuS.html)   | -          | Purity | ↑          | ✅ |
+| - | -           |  [\[Code\]](https://permetrics.readthedocs.io/en/latest/pages/clustering/SSEI.html)   | -          | Sum of Squared Error Index (SSEI) |  ↓           | ✅ |
+| - | -           |  [\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.jaccard_score.html)     | -          | Jaccard Index (IoU) |  ↑           | ✅ |
+| - | - |  [\[Code\]](https://permetrics.readthedocs.io/en/latest/pages/clustering/ES.html)   | - | Cross Entropy | ↓           | ✅ |
+| - | Hartigan | [\[Code\]](https://permetrics.readthedocs.io/en/latest/pages/clustering/HI.html) | - | Hartigan Index | ↓ | ❌ |
 
 
 
