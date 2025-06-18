@@ -6,15 +6,15 @@
 
 ## Contents
 <!-- TOC -->
-* [Awesome Clustering ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](#awesome-clustering-)
-  * [Contents](#contents)
-  * [Surveys](#surveys)
-  * [Theory](#theory)
-  * [Methods](#methods)
-  * [Estimating the number of clusters](#estimating-the-number-of-clusters)
-  * [Frameworks and code](#frameworks-and-code)
-  * [Metrics](#metrics)
-  * [Datasets](#datasets)
+- [Awesome Clustering ](#awesome-clustering-)
+	- [Contents](#contents)
+	- [Surveys](#surveys)
+	- [Theory](#theory)
+	- [Methods](#methods)
+	- [Estimating the number of clusters](#estimating-the-number-of-clusters)
+	- [Frameworks and code](#frameworks-and-code)
+	- [Metrics](#metrics)
+	- [Datasets](#datasets)
 <!-- TOC -->
 
 ## Surveys
@@ -23,6 +23,7 @@
 |------|---------------------------------------------------------|----------------------------------------------------------------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1999 | Jain, Anil K., M. Narasimha Murty, and Patrick J. Flynn | Data clustering: a review                    | ACM computing surveys (CSUR)   | [Link](https://dl.acm.org/doi/pdf/10.1145/331499.331504)                        |
 | 2005 | Xu, Rui, and Donald Wunsch         | Survey of clustering algorithms              | IEEE Transactions on neural networks                | [Link](https://www.researchgate.net/publication/3303538_Survey_of_Clustering_Algorithms)             |
+| 2013 | Liu, Yanchi et al. | Understanding and enhancement of internal clustering validation measures | IEEE Transactions on Cybernetics | [Link](https://ieeexplore.ieee.org/abstract/document/6341117)
 | 2015 | Xu, Dongkuan, and Yingjie Tian     | A comprehensive survey of clustering algorithms                   | Annals of data science         | [Link](https://link.springer.com/article/10.1007/S40745-015-0040-1)             |
 | 2022 | Ezugwu, Absalom E., et al.         | A Comprehensive Survey on Deep Clustering: Taxonomy, Challenges, and Future Directions | Engineering Applications of Artificial Intelligence | [Link](https://www.researchgate.net/publication/361323843_A_Comprehensive_Survey_on_Deep_Clustering_Taxonomy_Challenges_and_Future_Directions) |
 
@@ -30,6 +31,9 @@
 ## Theory
 | Year | Authors       | Title              | Venue   | Publication Link          |
 |------|------------------------------------|--------------------------------------------------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| 2002 | Kleinberg, Jon | An impossibility theorem for clustering | Advances in Neural Information Processing Systems | [Link](https://proceedings.neurips.cc/paper_files/paper/2002/file/43e4e6a6f341e00671e123714de019a8-Paper.pdf) |
+| 2008 | Ackerman and Ben-David | Measures of Clustering Quality: A Working Set of Axioms for Clustering |Advances in Neural Information Processing Systems | [Link](https://proceedings.neurips.cc/paper_files/paper/2008/file/beed13602b9b0e6ecb5b568ff5058f07-Paper.pdf) | 
+| 2009 | Ackerman and Ben-David | Clusterability: A Theoretical Study |  International Conference on Artificial Intelligence and Statistics, PMLR  | [Link](https://proceedings.mlr.press/v5/ackerman09a/ackerman09a.pdf) |
 | 2017 | Moseley, Benjamin and Wang, Joshua | Approximation Bounds for Hierarchical Clustering: Average Linkage, Bisecting K-means, and Local Search | Advances in Neural Information Processing Systems | [Link](https://proceedings.neurips.cc/paper_files/paper/2017/file/d8d31bd778da8bdd536187c36e48892b-Paper.pdf) |
 
 
@@ -64,6 +68,9 @@
 | Name         | Language | Methods      | Documentation          | Code       |
 |--------------|----------|--------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------|
 | scikit-learn | python   | k-means, k-means++, dbscan, hdbscan, spectral and more | [Docs](https://scikit-learn.org/stable/api/sklearn.cluster.html) | [Code](https://github.com/scikit-learn/scikit-learn) |
+| pyclustering | python | k-means, x-means birch, bsas, and more | [Docs](https://pyclustering.github.io/docs/0.8.2/html/index.html) | [Code](https://github.com/annoviko/pyclustering) (no more maintenance) |
+| ClusterPy | python | Many partition-based, density-based, and hierarchical clustering algorithms | [Docs](https://github.com/collinleiber/ClustPy) | [Code](https://github.com/collinleiber/ClustPy) |
+| PyIVM | python | Internal clustering validation measures | [Docs](https://github.com/hj-n/pyivm) | [Code](https://github.com/hj-n/pyivm) |
 
 ## Metrics
 | Year | Authors | Title | Venue | Name | Optimality | Requires Ground Truth | 
@@ -82,6 +89,8 @@
 | 2003 | Meila                | Comparing Clusterings by the Variation of Information [\[Paper\]](https://link.springer.com/chapter/10.1007/978-3-540-45167-9_14)[\[Code\]](https://clusteringjl.readthedocs.io/en/latest/varinfo.html)   | Learning Theory and Kernel Machine          | Variation of Information (VI) | ↓          | ✅ |
 | 2007 |  Rosenberg and  Hirschberg            | V-Measure: A conditional entropy-based external cluster evaluation measure      [\[Paper\]](https://aclweb.org/anthology/D/D07/D07-1043.pdf)[\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.v_measure_score.html) | Computational Statistics Handbook| V-Measure     |  ↑ |         ✅ |
 | 2010 | Vinh, Epps, and Bailey | [\[Paper\]](http://jmlr.csail.mit.edu/papers/volume11/vinh10a/vinh10a.pdf) [\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_mutual_info_score.html) | JMLR | Adjusted Mutual Information (AMI) | ↓ | ✅ |
+| 2013 | Wu, Junjiw et al. | Adapting the Right Measures for K-means Clustering  [\[Paper\]](https://dl.acm.org/doi/pdf/10.1145/1557019.1557115?casa_token=xH3-07vgCAYAAAAA:EtDUt48_XPt27Fwn0-arbik-mfZKen0KFMw1fpZIyD64tFUXh1pd-x16RZm-SV3l_NY4pVG6kUWZ) | KDD | Normalized external validation measures | Depends on the measure | ✅ |
+| 2025 | Jeon, Hyeon et al. | Measuring the Validity of Clustering Validation Datasets [\[Paper\]](https://arxiv.org/abs/2503.01097) [\[Code\]](https://github.com/hj-n/pyivm) | TPAMI | Adjusted Internal Valdiation Measures | ↑ | ❌ |
 | - | - |[\[Code\]](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html)   |     -      |  Normalized Mutual Information (NMI) |  ↑ | ✅ |
 | - | -                |  [\[Code\]](https://permetrics.readthedocs.io/en/latest/pages/clustering/PuS.html)   | -          | Purity | ↑          | ✅ |
 | - | -           |  [\[Code\]](https://permetrics.readthedocs.io/en/latest/pages/clustering/SSEI.html)   | -          | Sum of Squared Error Index (SSEI) |  ↓           | ✅ |
